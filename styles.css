@@ -1,12 +1,13 @@
 #container {
     background-color: rgb(151, 151, 219);
     height: 100vh;
-}
-
-.newDivs {
-    background-color: rgb(185, 43, 43);
-    border: 1px solid rgb(0, 0, 0);
-    height: 16px;
     display: flex;
-
 }
+
+.inDiv {
+    border: 1px solid rgb(0, 0, 0);
+    height: 10px;
+    width: 12px;
+    
+}
+
