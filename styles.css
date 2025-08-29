@@ -4,6 +4,7 @@
     justify-items: center;
     width: 960px;
     height: 960px;
+    overflow: hidden;
     
 }
 
@@ -20,6 +21,7 @@ body{
     background-color: rgb(180, 154, 240);
     align-content: center;
     justify-items: center;
+    
 }
 
 .btn{

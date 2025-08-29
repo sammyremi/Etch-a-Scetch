@@ -5,11 +5,12 @@ pixelDraw()
 function divCreator(num){
     div = document.createElement("div")
     div.classList.add("outDiv")
+    let innerDivSize = 960 / num; 
     for (x = 0; x < num; x++){
         innerDiv = document.createElement("div")
         innerDiv.classList.add("inDiv")
-        innerDiv.style.height = "64px"
-        innerDiv.style.width = "64px"
+        innerDiv.style.height = `${innerDivSize}px`; 
+        innerDiv.style.width = `${innerDivSize}px`; 
         div.appendChild(innerDiv)
     }
     return div
@@ -59,7 +60,11 @@ btn.addEventListener("click", () => {
 
 function selectColor(){
 
-    let colors = ["green", "red", "blue", "black", "purple"]
-    let color = Math.random() * 5
+    let colors = [
+  "Red",  "Green",  "Blue",  "Yellow",  "Orange",  "Purple",
+  "Pink",  "Brown",  "Black",  "White",  "Gray",  "Cyan",  "Magenta",  "Lime",
+  "Teal",  "Lavender",  "Maroon", "Olive","Navy","Silver"]
+
+    let color = Math.random() * colors.length
     return colors[Math.floor(color)];
 }
